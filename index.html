@@ -39,6 +39,11 @@
       <div class="form-group" ng-if="signupForm.username.$error.maxlength  && signupForm.username.$touched">
         用户名长度大于10位
       </div>
+      <div class="form-group">
+        <div class="col-md-12">
+          <div class="form-control">{{signupForm.password2.$error.compare && signupForm.password2.$touched}}</div>
+        </div>
+      </div>
 			<div class="form-group">
 				<label class="col-sm-4 control-label">密码:</label>
 				<div class="col-sm-8">
